@@ -103,18 +103,19 @@
 <div class="container text-center">    
   <h3>Gyvūnai</h3><br>
   <div class="row">
+    	
     <div class="col-sm-4">
-      <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-cat-wearing-sunglasses-while-sitting-royalty-free-image-1571755145.jpg?crop=0.670xw:1.00xh;0.147xw,0&resize=980:*" alt="Logo" style="width:100px" class="img-responsive" style="width:100%" alt="Image">
-      <p>Katės</p>
+    <a href="#">Katės </a>
+      <a href="#"><img src="http://images6.fanpop.com/image/photos/36800000/Cat-cats-36871220-2500-1695.jpg" alt="Logo" style="width:300px" class="img-responsive" style="width:100%" alt="Image"></a>
     </div>
     <div class="col-sm-4"> 
-      <img src="https://ggsc.s3.amazonaws.com/images/made/images/uploads/The_Science-Backed_Benefits_of_Being_a_Dog_Owner_300_200_int_c1-1x.jpg" alt="Logo" style="width:100px" class="img-responsive" style="width:100%" alt="Image">
-      <p>Šunys</p>    
+    <a href="#">Šunys </a>
+      <img src="https://ggsc.s3.amazonaws.com/images/made/images/uploads/The_Science-Backed_Benefits_of_Being_a_Dog_Owner_300_200_int_c1-1x.jpg" alt="Logo" style="width:300px" class="img-responsive" style="width:100%" alt="Image">
     </div>
     <div class="row">
     <div class="col-sm-4">
-      <img src="https://smallpetsite.com/wp-content/uploads/2020/01/50e2dc444256b114a6d98074cf213576083edbed535373407c2f7d_640.jpg?ezimgfmt=ng:webp/ngcb154" alt="Logo" style="width:100px" class="img-responsive" style="width:100%" alt="Image">
-      <p>Kiti</p>
+    <a href="#">Kiti </a>
+      <img src="https://smallpetsite.com/wp-content/uploads/2020/01/50e2dc444256b114a6d98074cf213576083edbed535373407c2f7d_640.jpg?ezimgfmt=ng:webp/ngcb154" alt="Logo" style="width:300px" class="img-responsive" style="width:100%" alt="Image">
     </div>
   </div>
 </div><br>
