@@ -48,7 +48,8 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Apie mus</a></li>
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Apie mus</a></li>
         <li><a href="#">Priglausk gyvūną</a></li>
         <li><a href="#">Atiduoti augintinį</a></li>
         <li><a href="#">Finansinė parama</a></li>
