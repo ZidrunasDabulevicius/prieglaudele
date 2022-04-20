@@ -74,7 +74,7 @@
       <div class="item active">
         <img src="https://cdn.sanity.io/images/0vv8moc6/dvm360/e28735abb3f1073399b64e4ee92b900ed556c357-5314x3543.jpg/AdobeStock_257182690.jpeg?fit=crop&auto=format" alt="Image">
         <div class="carousel-caption">
-          <h3>Paremkite $</h3>
+          <h3>Paremkite arba priglauskite</h3>
           <p>Meilė ir rūpestis</p>
         </div>      
       </div>
