@@ -1,7 +1,7 @@
 # prieglaudele
 
 The example application is an animal shelter site called "Gyvūnų prieglauda".
-The project consist of database file, codefile and additional files (for ex. frondend code files, image file, etc.)
+The project consist of database file, code file and additional files (for ex. frondend code files, image file, etc.)
 
 # IDE
 
