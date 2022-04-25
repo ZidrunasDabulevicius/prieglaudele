@@ -1,12 +1,12 @@
 # User Manual
 
 1. Importuokite DB "prieglauda"
-2. isikelkite php failus i eclipse IDE (php projekto katalogas C:\xampp\htdocs\gyvunuPrieglauda)
-3. Isikelkite img kataloga (C:\xampp\htdocs\gyvunuPrieglauda\img)
-4. Startuokite nuo puslapio pradinis.php
-5. registruokites
-6. prisijunkite naudodami vartotojo varda ir slaptazodi.
-7. perziurekite esamus gyvunus skiltyje: "Priglausk gyvuna"
+2. Įsikelkite .php failus į eclipse IDE (php projekto katalogas C:\xampp\htdocs\gyvunuPrieglauda);
+3. Įsikelkite img katalogą (C:\xampp\htdocs\gyvunuPrieglauda\img);
+4. Startuokite nuo puslapio pradinis.php;
+5. Registruokitės;
+6. Prisijunkite naudodami vartotojo vardą ir slaptažodį;
+7. Peržiūrėkite esamus gyvūnus skiltyje: "Priglausk gyvūną"
 
 
 # prieglaudele
