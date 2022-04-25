@@ -48,9 +48,9 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Apie mus</a></li>
-        <li><a href="priglauskgyvuna.php">Priglausk gyvūną</a></li>
+        <li class="active"><a href="./pagrindinis.php">Home</a></li>
+        <li><a href="./pages/apiemus.php">Apie mus</a></li>
+        <li><a href="pages/priglauskgyvuna.php">Priglausk gyvūną</a></li>
         <li><a href="#">Atiduoti augintinį</a></li>
         <li><a href="#">Finansinė parama</a></li>
         <li><a href="#">Kontaktai</a></li>
@@ -65,8 +65,8 @@ if (isset($_COOKIE['vartotojas'])) {
 else {
     ?>
             </a></li>
-      	<li><a href="registracija.php"><span class="glyphicon glyphicon-log-in"></span> Registruotis</a></li>
-        <li><a href="prisijungimas.php"><span class="glyphicon glyphicon-log-in"></span> Prisijungti</a></li>
+      	<li><a href="./pages/registracija.php"><span class="glyphicon glyphicon-log-in"></span> Registruotis</a></li>
+        <li><a href="./pages/prisijungimas.php"><span class="glyphicon glyphicon-log-in"></span> Prisijungti</a></li>
      <?php }?> 
              
  
