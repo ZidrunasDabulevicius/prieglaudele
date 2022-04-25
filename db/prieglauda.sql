@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 21, 2022 at 02:18 PM
+-- Generation Time: Apr 25, 2022 at 01:04 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.0.14
 
@@ -33,25 +33,36 @@ CREATE TABLE `gyvunai` (
   `kategorija_id` int(11) NOT NULL,
   `amzius` float NOT NULL,
   `dokumentai` tinyint(1) NOT NULL,
-  `nuotrauka` varchar(254) NOT NULL,
-  `aprasas` text NOT NULL
+  `vardas` varchar(40) NOT NULL,
+  `nuotrauka` varchar(254) NOT NULL DEFAULT 'img/siluetas.jpg',
+  `aprasas` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `gyvunai`
 --
 
-INSERT INTO `gyvunai` (`gyvunas_id`, `vartotojai_id`, `kategorija_id`, `amzius`, `dokumentai`, `nuotrauka`, `aprasas`) VALUES
-(2, 2, 5, 1.5, 0, 'img/2.jpg', 'Turi daug energijos. Mėgsta žaist su žmogumi , labai nori dėmesio, veiksmo . Su kitais šunim komplikuota. Iš pradžių gali žaisti, bet jei kažkas nepatiks – “kibs į atlapus”, tad su kitu šunimi galėtų bendrauti tik akylai stebima šeimininkų.\r\n'),
-(3, 3, 6, 2.5, 1, 'img/3a.jpg', 'Dabar katinas šiek tiek baikštesnis per pirmą kontaktą, bet apsipratęs rodo tikrąjį savo charakteris. Iš tikro katinas labai mielas draugiškas, kuris labai mėgsta paglostukus, murkia. Jam tik reikia kantraus šeimininko ir turėsite puikų kompanioną.\r\n'),
-(4, 2, 7, 4.5, 1, '', ''),
-(6, 3, 5, 2, 0, 'img/Nik-3.jpg', 'Ji gimė ir augo niekam nereikalinga viename ūkyje, kol galiausiai ją atvežė mums. Nuo prigimties baikšti šunytė jau drąsiai laksto po kiemelį, smalsiai viską uostinėja, draugauja su visais šuneliais ir prašo glamonių. Kol kas dar su pavadėliu nedraugauja, bet kantrybės, kantrybės ir dar kartą kantrybės! Ūka nerodo jokios agresijos, ko nors išsigandusi iškart bėga į savo voljerą, įlenda į būda ir viską stebi. Skiepyta, ženklinta, sterilizuota. Ieškome jai labai kantrių, laiko ir noro ją dresuoti turinčių žmonių. Ūkai tinkamiausias variantas būtų nuosavas namas su aptvertu kiemu, o jei dar būtų kitas labai draugiškas ir drąsus šuo, tai būtų tobula.\r\n'),
-(7, 3, 5, 2, 1, 'img/3.jpg', 'Baisiai gudri kalytė, gyvenusi gatvėje, ilgai net maitintojų neprisileidusi, o stogo virš galvos tai nėra, o kelias judrus čia pat. Buvo jaukinama, viliojama ir pagaliau su visokiais nuotykiais pagauta. Dabar šunytė labai linksma, nuotaikinga, mėgsta pasimaivyti ir vis prašyti keldama leteną daugiau paglostyti. Vienintelis ko bijo, tai pavadėlis ir pasivaikščiojimai, todėl labiau tiktų į nuosavą uždarą kiemą.\r\n'),
-(8, 3, 6, 2, 0, 'img/1a.jpg', '\"Vis dar ieško namų katinas. Jis labai puikus ir labai norime tikėti, kad atsiras šeimininkai, jį pamilsiantys avansu:)\r\nKatinui beveik 3 metai. Jis jau... du metus „Gyvūnų“ prieglaudoje! LAUKIA JŪSŲ. Laukia taip ilgai... Žiūri per langą. Keičiasi metų laikai, keičiasi katinas, tik nesikeičia jo gyvenamoji vieta...\r\nIš pradžių jis buvo laukinukas, gyveno tamsiausiam kampe. Bet širdutė pamažu atitirpo. Daug kantrybės, skanukų ir žaisliukų ir ledai jau pralaužti, jis tikrai bus nuostabus naminis katinas ir Jūsų draugas. \"\r\n'),
-(9, 3, 6, 3, 0, 'img/2a.jpg', 'Katė su 6 kačiukais paimti iš po balkono Didlaukio g. Užauginusi kačiukus mama buvo sterilizuota ir atvyko į Akropolio namelį ieškoti savo laimės. Gyvenimas lauke drasos nepridėjo, todėl nors ir labai švelni, neagresyvi katė, bet pirminio kontakti bijo, susigūžia, gali šnypštelti, bet niekada nepuls, o kai pradedi glostyti atsipalaiduoja ir mėgaujasi. Namuose gal prireisk laiko, bet pripratusi bus nuostabi draugė ir dėkinga už galimybę gyventi namuose, o ne po balkonu.\r\n'),
-(10, 3, 7, 0.5, 0, 'img/Žiurkėnas.jpg', 'Žiurkėnai yra naktiniai, labai socialūs ir nepaprastai protingi gyvūnai! Dėl labai socialinio žiurkėnų pobūdžio mes mieliau jas prideriname prie namų, kuriuose gyvena esami žiurkėnai. Šiuo metu Žiurkėnas laukia naujų namų, jam 5 mėnesiai.\r\n'),
-(11, 3, 7, 0.5, 0, 'img/dekoratyvinis kiškis.jpg', 'Dekoratyvinis kiškis vis dar yra kūdikis ir vis dar mokosi geresnių dalykų gyvenime – pavyzdžiui, kokios daržovės yra jo mėgstamiausias užkandis! Esant tokiai situacijai, šis kiškis mielai pozuoja nuotraukoms, gauna kasdienę glamonių dozę ir anksčiau gyveno su vaikais. Kiškis šiuo metu yra globos namuose ir laukia, kol kas nors jį įsivaikins!\r\n'),
-(12, 3, 7, 0.5, 0, 'img/Jūrų kiaulytės.jpg', 'Dvi jaunos jūrų kiaulytės, kurios praleido laiką globos namuose laukdamos savo būsimos šeimos! Šios mielosios yra įpratusios būti laikomos, mėgsta savo daržoves ir kartu ieško namų!\r\n');
+INSERT INTO `gyvunai` (`gyvunas_id`, `vartotojai_id`, `kategorija_id`, `amzius`, `dokumentai`, `vardas`, `nuotrauka`, `aprasas`) VALUES
+(2, 3, 6, 7, 0, 'Mesė', 'img/Mese.jpeg', 'Neišpasakyto meilumo ir švelnumo. Tik glostyk ją, tik kalbink, tik stebėk. \r\n'),
+(3, 3, 6, 3, 1, 'Pūkis', 'img/1_kate.jpg', 'Pukis labai mielas draugiškas, kuris labai mėgsta paglostukus, murkia. \r\n'),
+(4, 2, 6, 2.5, 1, 'Juodis', 'img/2_kate.jpg', 'Jis labai puikus ir labai norime tikėti, kad atsiras šeimininkai, jį pamilsiantys avansu.\r\n'),
+(6, 3, 6, 5, 0, 'Rainė', 'img/Rainė.jpg', 'Namuose gal prireisk laiko, bet pripratusi bus nuostabi draugė ir dėkinga už galimybę gyventi namuose, o ne po balkonu.\r\n'),
+(7, 3, 6, 2, 1, 'Orionas', 'img/Orionas.jpg', 'Katinėlis nedrąsus, bijo būti liečiamas ir glostomas, galima paglostyti tik uodegos galiuką ar pėdutę pakutenti \r\n'),
+(8, 3, 6, 1, 0, 'Saris', 'img/Saris.jpg', 'Jaunas, mėgstantis dūkti, žaisti gaudynių, moka užlipti aukštai.\r\n'),
+(9, 3, 6, 2, 0, 'Atlantas', 'img/Atlantas.jpg', 'Alantas sveikas ir stiprus, paskiepytas ir kastruotas. Su nepažįstamais yra atsargus – jam reikia šiek tiek laiko priprasti prie žmogaus.\r\n'),
+(10, 3, 7, 0.5, 0, 'Džiras', 'img/ziurkenas.jpg', 'Šiuo metu Žiurkėnas laukia naujų namų, jam 5 mėnesiai.\r\n'),
+(11, 3, 7, 0.5, 0, 'Pikis', 'img/dekoratyvinis_kiskis.jpg', 'Dekoratyvinis kiškis vis dar yra kūdikis ir vis dar mokosi geresnių dalykų gyvenime – pavyzdžiui, kokios daržovės yra jo mėgstamiausias užkandis! \r\n'),
+(12, 3, 7, 1, 0, 'Tikė ir Paikis', 'img/juru_kiaulytes.jpg', 'Šios mielosios yra įpratusios būti laikomos, mėgsta savo daržoves ir kartu ieško namų!\r\n'),
+(13, 3, 7, 2, 0, 'Balis', 'img/siluetas.jpg', 'Šiuo metu prieglaudoje yra 2 metų vėžlys, kuris ieško saugių namų.\r\n'),
+(14, 3, 7, 1, 0, 'Esme', 'img/Esme.jpg', 'Esme yra miela ir mėgsta leisti laiką kišenėje ar švarko rankovėse! \r\n'),
+(15, 3, 7, 2, 0, 'Todas', 'img/Todas.jpg', 'Todui patinka, kai jam trinamas smakras, jis dievina savo naktines daržoves – nekantriai jų laukia! \r\n'),
+(16, 3, 7, 0.5, 0, 'Lebuna', 'img/Lebuna.jpg', 'Lebuna mėgsta visas daržoves. Pripratusi gyventi aptvare. \r\n'),
+(17, 3, 5, 3, 0, 'Džesė', 'img/1_suo.jpg', 'Turi daug energijos. Mėgsta žaist su žmogumi , labai nori dėmesio, veiksmo.\r\n\r\n'),
+(18, 3, 5, 2, 0, 'Ūka', 'img/2_suo.jpg', 'Nuo prigimties baikšti šunytė jau drąsiai laksto po kiemelį, smalsiai viską uostinėja, draugauja su visais šuneliais ir prašo glamonių.\r\n'),
+(19, 3, 5, 4, 0, 'Bela', 'img/3_suo.jpg', 'Šunytė labai linksma, nuotaikinga, mėgsta pasimaivyti ir vis prašyti keldama leteną daugiau paglostyti. \r\n'),
+(20, 3, 5, 7, 0, 'Raideris', 'img/Nik.jpg', 'Augintas rūpestingai ir mylinčiai. Raideris buvo kiemo sargas, augintas lauke. \r\n'),
+(21, 3, 5, 0.5, 0, 'Mikis', 'img/Mikis.jpg', 'Jaunas draugiškas, neišauklėtas, reikalauja daug dėmesio, tinka gyventi tik namuose, žaismingas\r\n\r\n'),
+(22, 3, 5, 2, 0, 'Bagyra', 'img/Bagyra.jpg', 'Bagyra imli mokslams! Ieškomas šeimininkas, kuris norės tuos mokslus kartu su ja tęsti ir toliau!\r\n\r\n\r\n');
 
 -- --------------------------------------------------------
 
@@ -110,7 +121,8 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`vartotojai_id`, `vardas`, `pavarde`, `vartotojo_vardas`, `slaptazodis`, `elpastas`, `admin`) VALUES
 (1, 'admin', '', 'admin', 'Adminas Adminaitis', '', 1),
 (2, 'Petras', 'Petraitis', 'petras123', 'petrauskas1646', 'petras@gmail.com', 0),
-(3, 'Jonas', 'Jonaitis', 'jonas 234', 'jonauskas1646', 'jonas@gmail.com', 0);
+(3, 'Jonas', 'Jonaitis', 'jonas 234', 'jonauskas1646', 'jonas@gmail.com', 0),
+(4, '', '', 'aa', '4124bc0a9335c27f086f24ba207a4912', 'aa@gmail.com', 0);
 
 --
 -- Indexes for dumped tables
@@ -152,7 +164,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `gyvunai`
 --
 ALTER TABLE `gyvunai`
-  MODIFY `gyvunas_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `gyvunas_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `ivykiai`
@@ -170,7 +182,7 @@ ALTER TABLE `kategorija`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `vartotojai_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `vartotojai_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Constraints for dumped tables
@@ -188,12 +200,6 @@ ALTER TABLE `gyvunai`
 --
 ALTER TABLE `ivykiai`
   ADD CONSTRAINT `ivykiai_ibfk_1` FOREIGN KEY (`vartotojai_id`) REFERENCES `users` (`vartotojai_id`);
-
---
--- Constraints for table `kategorija`
---
-ALTER TABLE `kategorija`
-  ADD CONSTRAINT `kategorija_ibfk_1` FOREIGN KEY (`kategorija_id`) REFERENCES `gyvunai` (`kategorija_id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
