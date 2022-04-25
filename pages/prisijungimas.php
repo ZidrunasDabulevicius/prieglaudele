@@ -8,7 +8,7 @@
 <body>
     <?php
     if(isset($_COOKIE['vartotojas'])) {
-        header('Location: ./pagrindinis.php');
+        header('Location: ../pagrindinis.php');
     }
     ?>
     

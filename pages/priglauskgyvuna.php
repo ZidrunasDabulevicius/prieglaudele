@@ -35,16 +35,16 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Apie mus</a></li>
+        <li class="active"><a href="../pagrindinis.php">Home</a></li>
+        <li><a href="apiemus.php">Apie mus</a></li>
         <li><a href="#">Priglausk gyvūną</a></li>
         <li><a href="#">Atiduoti augintinį</a></li>
         <li><a href="#">Finansinė parama</a></li>
         <li><a href="#">Kontaktai</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-      	<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Registruotis</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Prisijungti</a></li>
+      	<li><a href="registracija.php"><span class="glyphicon glyphicon-log-in"></span> Registruotis</a></li>
+        <li><a href="prisijungimas.php"><span class="glyphicon glyphicon-log-in"></span> Prisijungti</a></li>
       </ul>
     </div>
   </div>
@@ -81,7 +81,7 @@
 // jungtis, pakeiskite db
 $link= mysqli_connect("localhost", "root", "", "prieglauda");
 // uzklausos ivykdymas, pakeiskite lenteles varda
-$query= mysqli_query($link, "select kategorija.pavadinimas as pavadinimas, gyvunai.amzius as amzius, gyvunai.nuotrauka as nuotrauka from gyvunai,kategorija WHERE gyvunai.kategorija_id=kategorija.kategorija_id");
+$query= mysqli_query($link, "select kategorija.pavadinimas as pavadinimas, gyvunai.amzius as amzius, gyvunai.nuotrauka as nuotrauka, gyvunai.vardas as vardas, gyvunai.aprasas as aprasas from gyvunai,kategorija WHERE gyvunai.kategorija_id=kategorija.kategorija_id");
 
 // po eilute is duombazes nuskaitome ir atliekame veiksmus
 while ($result= mysqli_fetch_assoc($query)){
@@ -98,11 +98,11 @@ while ($result= mysqli_fetch_assoc($query)){
     <div class="col-sm-4">
       <div class="panel panel-primary">
       <div class="panel-heading"> <?php echo "<h1>".$result['pavadinimas']."</h1>";?></div>
-        <div class="panel-heading">GYVŪNO VARDAS</div>
+        <div class="panel-heading">GYVŪNO VARDAS <?php echo "<h1>".$result['vardas']."</h1>";?></div>
         <div class="panel-heading">AMŽIUS <?php echo "<h1>".$result['amzius']."</h1>";?> Metai</div>
     	 <img src="<?php echo $result["nuotrauka"]; ?>" class="img-responsive" style="width:100%" alt="Image" /><br /> 
         
-        <div class="panel-footer"> Aprasymas</div>
+        <div class="panel-footer"> <?php echo "".$result['aprasas']."";?></div>
       </div>
     </div>  
     
