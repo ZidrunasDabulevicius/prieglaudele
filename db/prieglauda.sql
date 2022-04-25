@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 25, 2022 at 01:04 PM
+-- Generation Time: Apr 25, 2022 at 01:29 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.0.14
 
@@ -43,13 +43,13 @@ CREATE TABLE `gyvunai` (
 --
 
 INSERT INTO `gyvunai` (`gyvunas_id`, `vartotojai_id`, `kategorija_id`, `amzius`, `dokumentai`, `vardas`, `nuotrauka`, `aprasas`) VALUES
-(2, 3, 6, 7, 0, 'Mesė', 'img/Mese.jpeg', 'Neišpasakyto meilumo ir švelnumo. Tik glostyk ją, tik kalbink, tik stebėk. \r\n'),
+(2, 3, 6, 7, 0, 'Mesė', 'img/Mese.jpg', 'Neišpasakyto meilumo ir švelnumo. Tik glostyk ją, tik kalbink, tik stebėk. \r\n'),
 (3, 3, 6, 3, 1, 'Pūkis', 'img/1_kate.jpg', 'Pukis labai mielas draugiškas, kuris labai mėgsta paglostukus, murkia. \r\n'),
 (4, 2, 6, 2.5, 1, 'Juodis', 'img/2_kate.jpg', 'Jis labai puikus ir labai norime tikėti, kad atsiras šeimininkai, jį pamilsiantys avansu.\r\n'),
-(6, 3, 6, 5, 0, 'Rainė', 'img/Rainė.jpg', 'Namuose gal prireisk laiko, bet pripratusi bus nuostabi draugė ir dėkinga už galimybę gyventi namuose, o ne po balkonu.\r\n'),
+(6, 3, 6, 5, 0, 'Rainė', 'img/3_kate.jpg', 'Namuose gal prireisk laiko, bet pripratusi bus nuostabi draugė ir dėkinga už galimybę gyventi namuose, o ne po balkonu.\r\n'),
 (7, 3, 6, 2, 1, 'Orionas', 'img/Orionas.jpg', 'Katinėlis nedrąsus, bijo būti liečiamas ir glostomas, galima paglostyti tik uodegos galiuką ar pėdutę pakutenti \r\n'),
 (8, 3, 6, 1, 0, 'Saris', 'img/Saris.jpg', 'Jaunas, mėgstantis dūkti, žaisti gaudynių, moka užlipti aukštai.\r\n'),
-(9, 3, 6, 2, 0, 'Atlantas', 'img/Atlantas.jpg', 'Alantas sveikas ir stiprus, paskiepytas ir kastruotas. Su nepažįstamais yra atsargus – jam reikia šiek tiek laiko priprasti prie žmogaus.\r\n'),
+(9, 3, 6, 2, 0, 'Alantas', 'img/Alantas.jpg', 'Alantas sveikas ir stiprus, paskiepytas ir kastruotas. Su nepažįstamais yra atsargus – jam reikia šiek tiek laiko priprasti prie žmogaus.\r\n'),
 (10, 3, 7, 0.5, 0, 'Džiras', 'img/ziurkenas.jpg', 'Šiuo metu Žiurkėnas laukia naujų namų, jam 5 mėnesiai.\r\n'),
 (11, 3, 7, 0.5, 0, 'Pikis', 'img/dekoratyvinis_kiskis.jpg', 'Dekoratyvinis kiškis vis dar yra kūdikis ir vis dar mokosi geresnių dalykų gyvenime – pavyzdžiui, kokios daržovės yra jo mėgstamiausias užkandis! \r\n'),
 (12, 3, 7, 1, 0, 'Tikė ir Paikis', 'img/juru_kiaulytes.jpg', 'Šios mielosios yra įpratusios būti laikomos, mėgsta savo daržoves ir kartu ieško namų!\r\n'),
