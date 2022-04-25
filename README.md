@@ -16,6 +16,6 @@ Testing is done manually.
 XAMPP is used as a free and Open-source cross-platform Web Server Solution Stack providing apache HTTP server and MySQL database.
 
 
- Aš, Židrūnas Dabulevičius, prisidedu.
-
+Aš, Židrūnas Dabulevičius, prisidedu.
+Aš, Židrūnas Dabulevičius, prisidedu2.
 
