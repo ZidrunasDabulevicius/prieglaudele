@@ -19,19 +19,7 @@
       background-color: #f2f2f2;
       padding: 25px;
     }
-    
-  .carousel-inner img {
-      width: 100%; /* Set width to 100% */
-      margin: auto;
-      min-height:200px;
-
-  }
-  /* Hide the carousel text when the screen is less than 600 pixels wide */
-  @media (max-width: 600px) {
-    .carousel-caption {
-      display: none; 
-    }
-  }
+   
   </style>
 </head>
 <body>
@@ -70,19 +58,19 @@
   </form>
   </footer>
   
-	<div class="container">  
+	<div class="container"> 
+	  <div class="col-sm-4"> 
+    <a href="#">Šunys </a>
+      <img src="https://ggsc.s3.amazonaws.com/images/made/images/uploads/The_Science-Backed_Benefits_of_Being_a_Dog_Owner_300_200_int_c1-1x.jpg" alt="Logo" style="width:300px" class="img-responsive" style="width:100%" alt="Image">
+    </div> 
     <div class="col-sm-4">
     <a href="#">Katės </a>
       <a href="#"><img src="http://images6.fanpop.com/image/photos/36800000/Cat-cats-36871220-2500-1695.jpg" alt="Logo" style="width:300px" class="img-responsive" style="width:100%" alt="Image"></a>
     </div>
-    <div class="col-sm-4"> 
-    <a href="#">Šunys </a>
-      <img src="https://ggsc.s3.amazonaws.com/images/made/images/uploads/The_Science-Backed_Benefits_of_Being_a_Dog_Owner_300_200_int_c1-1x.jpg" alt="Logo" style="width:300px" class="img-responsive" style="width:100%" alt="Image">
-    </div>
     <div class="row">
     <div class="col-sm-4">
     <a href="#">Kiti </a>
-      <img src="https://smallpetsite.com/wp-content/uploads/2020/01/50e2dc444256b114a6d98074cf213576083edbed535373407c2f7d_640.jpg?ezimgfmt=ng:webp/ngcb154" alt="Logo" style="width:300px" class="img-responsive" style="width:100%" alt="Image">
+      <img src="https://static.etaplius.lt/media/etaplius_gallery_image/5c4b03592d32a/guinea-pig-cavy-pet-guinea-60693.jpeg" alt="Logo" style="width:300px" class="img-responsive" style="width:100%" alt="Image">
     </div>
   </div>
 </div><br>
@@ -114,7 +102,7 @@ while ($result= mysqli_fetch_assoc($query)){
         <div class="panel-heading">AMŽIUS <?php echo "<h1>".$result['amzius']."</h1>";?> Metai</div>
     	 <img src="<?php echo $result["nuotrauka"]; ?>" class="img-responsive" style="width:100%" alt="Image" /><br /> 
         
-        <div class="panel-footer">Trumpas aprašymas arba info apie dokumentus</div>
+        <div class="panel-footer"> Aprasymas</div>
       </div>
     </div>  
     
@@ -130,7 +118,7 @@ while ($result= mysqli_fetch_assoc($query)){
 
     </div>
   </div>
-</div><br><br> 
+<br><br> 
 <footer class="container-fluid text-center">
   <p>2022 © KSU.lt, visos teisės saugomos</p>
 </footer>
