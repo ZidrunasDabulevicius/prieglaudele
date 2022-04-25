@@ -16,14 +16,14 @@
     
     /* Add a gray background color and some padding to the footer */
     footer {
-      background-color: #f2f2f2;
+      background-color: <img src="https://clipartmag.com/images/cartoon-dog-paw-1.jpg" alt="Logo" style="width:35px;height:35px"">;
       padding: 25px;
     }
     
   .carousel-inner img {
-      width: 100%; /* Set width to 100% */
+      width: 25%; /* Set width to 100% */
       margin: auto;
-      min-height:200px;
+      min-height:100px;
   }
 
   /* Hide the carousel text when the screen is less than 600 pixels wide */
@@ -44,7 +44,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#"><img src="https://clipartmag.com/images/cartoon-dog-paw-1.jpg" alt="Logo" style="width:25px"></a>
+      <a class="navbar-brand" href="#"><img src="https://clipartmag.com/images/cartoon-dog-paw-1.jpg" alt="Logo" style="width:25px;height:25px"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -81,19 +81,19 @@ else {
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
     </ol>
-
+    
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="https://cdn.sanity.io/images/0vv8moc6/dvm360/e28735abb3f1073399b64e4ee92b900ed556c357-5314x3543.jpg/AdobeStock_257182690.jpeg?fit=crop&auto=format" alt="Image">
+        <img src="https://cdn.sanity.io/images/0vv8moc6/dvm360/e28735abb3f1073399b64e4ee92b900ed556c357-5314x3543.jpg/AdobeStock_257182690.jpeg?fit=crop&auto=format" alt="Image" style="width:640px;height:360px">
         <div class="carousel-caption">
           <h3>Paremkite arba priglauskite</h3>
           <p>Meilė ir rūpestis</p>
         </div>      
-      </div>
+      </div> 
 
       <div class="item">
-        <img src="https://www.ovrs.com/blog/wp-content/uploads/2019/11/OVRS-Shelter-shutterstock_1030084558.jpg" alt="Image">
+        <img src="https://www.ovrs.com/blog/wp-content/uploads/2019/11/OVRS-Shelter-shutterstock_1030084558.jpg" alt="Image" style="width:640px;height:360px">
         <div class="carousel-caption">
           <h3>Suteik man namus</h3>
           <p>Ir būsime geriausi draugai</p>
@@ -114,20 +114,19 @@ else {
   
 <div class="container text-center">    
   <h3>Gyvūnai</h3><br>
-  <div class="row">
-    	
+   <div class="col-sm-4"> 
+    <a href="#">Šunys </a>
+      <img src="https://ggsc.s3.amazonaws.com/images/made/images/uploads/The_Science-Backed_Benefits_of_Being_a_Dog_Owner_300_200_int_c1-1x.jpg" alt="Logo" style="width:300px" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+  <div class="row">	
     <div class="col-sm-4">
     <a href="#">Katės </a>
       <a href="#"><img src="http://images6.fanpop.com/image/photos/36800000/Cat-cats-36871220-2500-1695.jpg" alt="Logo" style="width:300px" class="img-responsive" style="width:100%" alt="Image"></a>
     </div>
-    <div class="col-sm-4"> 
-    <a href="#">Šunys </a>
-      <img src="https://ggsc.s3.amazonaws.com/images/made/images/uploads/The_Science-Backed_Benefits_of_Being_a_Dog_Owner_300_200_int_c1-1x.jpg" alt="Logo" style="width:300px" class="img-responsive" style="width:100%" alt="Image">
-    </div>
     <div class="row">
     <div class="col-sm-4">
     <a href="#">Kiti </a>
-      <img src="https://smallpetsite.com/wp-content/uploads/2020/01/50e2dc444256b114a6d98074cf213576083edbed535373407c2f7d_640.jpg?ezimgfmt=ng:webp/ngcb154" alt="Logo" style="width:300px" class="img-responsive" style="width:100%" alt="Image">
+      <img src="https://static.etaplius.lt/media/etaplius_gallery_image/5c4b03592d32a/guinea-pig-cavy-pet-guinea-60693.jpeg" alt="Logo" style="width:300px" class="img-responsive" style="width:100%" alt="Image">
     </div>
   </div>
 </div><br>
