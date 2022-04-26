@@ -13,7 +13,7 @@ if(!empty($_POST)) {
     if($result !== null) {
         if($result["admin"]==1){header('Location: ./admin.php');}
         if($result["slaptazodis"] == md5($_POST['slaptazodis'])) {
-            setcookie('vartotojas', $result["vartotojo_vardas"], time()+60*60*24);
+            setcookie('vartotojas', $result["vartotojo_vardas"], time()+60*60*24, "/");
             header('Location: ../pagrindinis.php');
         }
         
