@@ -1,6 +1,6 @@
 <?php
 if (isset($_COOKIE["vartotojas"])){
-    header("Location: index.php");
+    header("Location: ../pagrindinis.php");
 }
 ?>
 

@@ -48,9 +48,9 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Apie mus</a></li>
-        <li><a href="priglauskgyvuna.php">Priglausk gyvūną</a></li>
+        <li class="active"><a href="./pagrindinis.php">Home</a></li>
+        <li><a href="./pages/apiemus.php">Apie mus</a></li>
+        <li><a href="pages/priglauskgyvuna.php">Priglausk gyvūną</a></li>
         <li><a href="#">Atiduoti augintinį</a></li>
         <li><a href="#">Finansinė parama</a></li>
         <li><a href="#">Kontaktai</a></li>
@@ -65,8 +65,8 @@ if (isset($_COOKIE['vartotojas'])) {
 else {
     ?>
             </a></li>
-      	<li><a href="registracija.php"><span class="glyphicon glyphicon-log-in"></span> Registruotis</a></li>
-        <li><a href="prisijungimas.php"><span class="glyphicon glyphicon-log-in"></span> Prisijungti</a></li>
+      	<li><a href="./pages/registracija.php"><span class="glyphicon glyphicon-log-in"></span> Registruotis</a></li>
+        <li><a href="./pages/prisijungimas.php"><span class="glyphicon glyphicon-log-in"></span> Prisijungti</a></li>
      <?php }?> 
              
  
@@ -115,17 +115,17 @@ else {
 <div class="container text-center">    
   <h3>Gyvūnai</h3><br>
    <div class="col-sm-4"> 
-    <a href="#">Šunys </a>
+    <a href="./pages/sunys.php">Šunys </a>
       <img src="https://ggsc.s3.amazonaws.com/images/made/images/uploads/The_Science-Backed_Benefits_of_Being_a_Dog_Owner_300_200_int_c1-1x.jpg" alt="Logo" style="width:300px" class="img-responsive" style="width:100%" alt="Image">
     </div>
   <div class="row">	
     <div class="col-sm-4">
-    <a href="#">Katės </a>
+    <a href="./pages/kates.php">Katės </a>
       <a href="#"><img src="http://images6.fanpop.com/image/photos/36800000/Cat-cats-36871220-2500-1695.jpg" alt="Logo" style="width:300px" class="img-responsive" style="width:100%" alt="Image"></a>
     </div>
     <div class="row">
     <div class="col-sm-4">
-    <a href="#">Kiti </a>
+    <a href="./pages/kiti.php">Kiti </a>
       <img src="https://static.etaplius.lt/media/etaplius_gallery_image/5c4b03592d32a/guinea-pig-cavy-pet-guinea-60693.jpeg" alt="Logo" style="width:300px" class="img-responsive" style="width:100%" alt="Image">
     </div>
   </div>
