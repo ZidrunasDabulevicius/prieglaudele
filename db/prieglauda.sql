@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 26, 2022 at 12:18 PM
+-- Generation Time: Apr 26, 2022 at 12:46 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.0.14
 
@@ -119,7 +119,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`vartotojai_id`, `vardas`, `pavarde`, `vartotojo_vardas`, `slaptazodis`, `elpastas`, `admin`) VALUES
-(1, 'admin', '', 'admin', 'Adminas Adminaitis', '', 1),
+(1, 'admin', '', 'admin', 'admin', '', 1),
 (2, 'Petras', 'Petraitis', 'petras123', 'petrauskas1646', 'petras@gmail.com', 0),
 (3, 'Jonas', 'Jonaitis', 'jonas 234', 'jonauskas1646', 'jonas@gmail.com', 0),
 (4, '', '', 'aa', 'aa', 'aa@gmail.com', 0);
