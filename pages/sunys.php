@@ -37,7 +37,7 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="../pagrindinis.php">Home</a></li>
         <li><a href="apiemus.php">Apie mus</a></li>
-        <li><a href="#">Priglausk gyvūną</a></li>
+        <li><a href="./priglauskgyvuna.php">Priglausk gyvūną</a></li>
         <li><a href="#">Atiduoti augintinį</a></li>
         <li><a href="#">Finansinė parama</a></li>
         <li><a href="#">Kontaktai</a></li>
@@ -76,15 +76,17 @@
 </div><br>
 
 <footer class="container-fluid text-center">
- <h3>Visi gyvūnai</h3> 
+ <h3>Šunys</h3> 
 </footer>
 <br><br>
+
+
 
 <?php
 // jungtis, pakeiskite db
 $link= mysqli_connect("localhost", "root", "", "prieglauda");
 // uzklausos ivykdymas, pakeiskite lenteles varda
-$query= mysqli_query($link, "select kategorija.pavadinimas as pavadinimas, gyvunai.amzius as amzius, gyvunai.nuotrauka as nuotrauka, gyvunai.vardas as vardas, gyvunai.aprasas as aprasas from gyvunai,kategorija WHERE gyvunai.kategorija_id=kategorija.kategorija_id");
+$query= mysqli_query($link, "select kategorija.pavadinimas as pavadinimas, gyvunai.amzius as amzius, gyvunai.nuotrauka as nuotrauka, gyvunai.vardas as vardas, gyvunai.aprasas as aprasas, pavadinimas from gyvunai,kategorija WHERE gyvunai.kategorija_id=kategorija.kategorija_id and pavadinimas='šuo';");
 
 // po eilute is duombazes nuskaitome ir atliekame veiksmus
 while ($result= mysqli_fetch_assoc($query)){

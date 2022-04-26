@@ -37,7 +37,7 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="../pagrindinis.php">Home</a></li>
         <li><a href="apiemus.php">Apie mus</a></li>
-        <li><a href="#">Priglausk gyvūną</a></li>
+        <li><a href="./priglauskgyvuna.php">Priglausk gyvūną</a></li>
         <li><a href="#">Atiduoti augintinį</a></li>
         <li><a href="#">Finansinė parama</a></li>
         <li><a href="#">Kontaktai</a></li>
@@ -64,8 +64,8 @@
       <img src="https://ggsc.s3.amazonaws.com/images/made/images/uploads/The_Science-Backed_Benefits_of_Being_a_Dog_Owner_300_200_int_c1-1x.jpg" alt="Logo" style="width:300px" class="img-responsive" style="width:100%" alt="Image">
     </div> 
     <div class="col-sm-4">
-    <a href="./kates.php">Katės </a>
-      <a href="#"><img src="http://images6.fanpop.com/image/photos/36800000/Cat-cats-36871220-2500-1695.jpg" alt="Logo" style="width:300px" class="img-responsive" style="width:100%" alt="Image"></a>
+    <a href="#">Katės </a>
+      <a href="./kates.php"><img src="http://images6.fanpop.com/image/photos/36800000/Cat-cats-36871220-2500-1695.jpg" alt="Logo" style="width:300px" class="img-responsive" style="width:100%" alt="Image"></a>
     </div>
     <div class="row">
     <div class="col-sm-4">
@@ -76,15 +76,17 @@
 </div><br>
 
 <footer class="container-fluid text-center">
- <h3>Visi gyvūnai</h3> 
+ <h3>Katės</h3> 
 </footer>
 <br><br>
+
+
 
 <?php
 // jungtis, pakeiskite db
 $link= mysqli_connect("localhost", "root", "", "prieglauda");
 // uzklausos ivykdymas, pakeiskite lenteles varda
-$query= mysqli_query($link, "select kategorija.pavadinimas as pavadinimas, gyvunai.amzius as amzius, gyvunai.nuotrauka as nuotrauka, gyvunai.vardas as vardas, gyvunai.aprasas as aprasas from gyvunai,kategorija WHERE gyvunai.kategorija_id=kategorija.kategorija_id");
+$query= mysqli_query($link, "select kategorija.pavadinimas as pavadinimas, gyvunai.amzius as amzius, gyvunai.nuotrauka as nuotrauka, gyvunai.vardas as vardas, gyvunai.aprasas as aprasas, pavadinimas from gyvunai,kategorija WHERE gyvunai.kategorija_id=kategorija.kategorija_id and pavadinimas='katė';");
 
 // po eilute is duombazes nuskaitome ir atliekame veiksmus
 while ($result= mysqli_fetch_assoc($query)){
@@ -112,13 +114,6 @@ while ($result= mysqli_fetch_assoc($query)){
     <?php 
 }
 ?>
-
-
-    
-    
-    
-    
-
     </div>
   </div>
 <br><br> 
