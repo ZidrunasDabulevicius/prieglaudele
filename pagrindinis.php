@@ -58,15 +58,20 @@
 
       <ul class="nav navbar-nav navbar-right">
       
-      <li><a href="#"><span class=""></span> <?php
-if (isset($_COOKIE['vartotojas'])) {
-    echo '<h5>Sveiki, ' . $_COOKIE['vartotojas'];
-}
-else {
-    ?>
-            </a></li>
-      	<li><a href="./pages/registracija.php"><span class="glyphicon glyphicon-log-in"></span> Registruotis</a></li>
+      <li><a href="#"><span class=""></span>
+       
+	 <?php
+	 
+        if (isset($_COOKIE['vartotojas'])) {
+             echo '<h5>Sveiki, ' . $_COOKIE['vartotojas'];
+             echo '<li><a href="./pages/atsijungti.php"><span class="glyphicon glyphicon-log-out"></span> Atsijungti</a></li>';
+        }
+        else {
+        ?>
+        </a></li>
+      	<li><a href="./pages/registracija.php"><span class="glyphicon glyphicon-registration-mark"></span> Registruotis</a></li>
         <li><a href="./pages/prisijungimas.php"><span class="glyphicon glyphicon-log-in"></span> Prisijungti</a></li>
+        
      <?php }?> 
              
  
