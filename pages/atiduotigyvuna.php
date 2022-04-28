@@ -46,16 +46,16 @@ $con = mysqli_connect("localhost", $user, $pass, $db);
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Apie mus</a></li>
-        <li><a href="#">Priglausk gyvūną</a></li>
-        <li><a href="#">Atiduoti augintinį</a></li>
+        <li class="active"><a href="../pagrindinis.php">Home</a></li>
+        <li><a href="./apiemus.php">Apie mus</a></li>
+        <li><a href="./priglauskgyvuna.php">Priglausk gyvūną</a></li>
+        <li><a href="./atiduotigyvuna.php">Atiduoti augintinį</a></li>
         <li><a href="#">Finansinė parama</a></li>
         <li><a href="#">Kontaktai</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-      	<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Registruotis</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Prisijungti</a></li>
+      	<li><a href="./registracija.php"><span class="glyphicon glyphicon-log-in"></span> Registruotis</a></li>
+        <li><a href="./prisijungimas.php"><span class="glyphicon glyphicon-log-in"></span> Prisijungti</a></li>
       </ul>
     </div>
   </div>

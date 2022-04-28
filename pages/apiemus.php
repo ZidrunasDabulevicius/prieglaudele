@@ -51,7 +51,7 @@
         <li class="active"><a href="../pagrindinis.php">Home</a></li>
         <li><a href="apiemus.php">Apie mus</a></li>
         <li><a href="priglauskgyvuna.php">Priglausk gyvūną</a></li>
-        <li><a href="#">Atiduoti augintinį</a></li>
+        <li><a href="./atiduotigyvuna.php">Atiduoti augintinį</a></li>
         <li><a href="#">Finansinė parama</a></li>
         <li><a href="#">Kontaktai</a></li>
       </ul>
