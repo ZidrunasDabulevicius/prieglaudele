@@ -48,9 +48,9 @@ if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg
             echo "Sorry, there was an error uploading your file.";
         }
     }
-
-// Connect to database
-
+    
+    // Connect to database
+    
     $conn = mysqli_connect("localhost", "root", "", "prieglauda");
     
     // Check connection
@@ -63,12 +63,12 @@ if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg
     $cookie_name = "user_id";
     $vartotojas = $_COOKIE[$cookie_name];
     $kategorija = $_POST['kategorija'];
-     
+    
     
     $amzius = $_REQUEST['amzius'];
     $dokumentai = 0;
-
-
+    
+    
     
     if(isset($_POST['dokumentacija']) &&
         $_POST['dokumentacija'] == 'Yes')
@@ -80,7 +80,7 @@ if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg
         $dokumentai = 0;
     }
     
-
+    
     
     $vardas = $_REQUEST['vardas'];
     $nuotrauka = $target_file;
@@ -88,7 +88,7 @@ if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg
     
     
     // Performing insert query execution
-
+    
     $sql = "INSERT INTO gyvunai (vartotojai_id,kategorija_id,amzius,dokumentai,vardas,nuotrauka,aprasas) VALUES ('$vartotojas','$kategorija','$amzius','$dokumentai','$vardas','$nuotrauka','$aprasas' )";
     
     if(mysqli_query($conn, $sql)){
@@ -105,4 +105,4 @@ if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg
     // Close connection
     mysqli_close($conn);
     
-?>
+    ?>

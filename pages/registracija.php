@@ -6,8 +6,6 @@ if (isset($_COOKIE["vartotojas"])){
 
 <!DOCTYPE html>
 
-
-
 <html>
     <head>
         <meta charset="UTF-8">
