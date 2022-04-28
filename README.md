@@ -8,6 +8,7 @@
 6. Prisijunkite naudodami vartotojo vardą ir slaptažodį;
 7. Peržiūrėkite esamus gyvūnus skiltyje: "Priglausk gyvūną"
 8. Užpildykite formą "Atiduoti augintinį", norėdami palikti prieglaudoje.
+9. Paspauskite nuorodą "Eksportuoti gyvūnų sąrašą .CSV formatu" priglausk gyvūną puslapyje, norėdami parsisiųsti sąrašą faile. 
 
 
 # prieglaudele
