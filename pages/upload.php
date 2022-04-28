@@ -1,4 +1,6 @@
 <?php
+require 'functions.php';
+
 $target_dir = "../img/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
@@ -58,10 +60,28 @@ if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg
     }
     
     // Taking  values from the form data(input)
-    $vartotojas = 4;
-    $kategorija = $_REQUEST['kategorija'];
+    $cookie_name = "user_id";
+    $vartotojas = $_COOKIE[$cookie_name];
+    $kategorija = $_POST['kategorija'];
+     
+    
     $amzius = $_REQUEST['amzius'];
     $dokumentai = 0;
+
+
+    
+    if(isset($_POST['dokumentacija']) &&
+        $_POST['dokumentacija'] == 'Yes')
+    {
+        $dokumentai = 1;
+    }
+    else
+    {
+        $dokumentai = 0;
+    }
+    
+
+    
     $vardas = $_REQUEST['vardas'];
     $nuotrauka = $target_file;
     $aprasas = $_REQUEST['aprasas'];

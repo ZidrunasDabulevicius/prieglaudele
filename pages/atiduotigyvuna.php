@@ -1,4 +1,15 @@
 <!DOCTYPE html>
+<?php
+$user = 'root';
+$pass = '';
+$db = 'prieglauda';
+
+$con = mysqli_connect("localhost", $user, $pass, $db);
+
+  $sql = "SELECT * FROM `kategorija`;";
+  $kategorija = mysqli_query ($con, $sql);
+?>
+
 <html lang="en">
 <head>
   <title>Bootstrap Example</title>
@@ -61,7 +72,31 @@
     <div class="col-md-12">
       <div class="row">
         <div class="col-sm-4 form-group">
-          <input class="form-control" id="kategorija" name="kategorija" placeholder="Kategorija" type="text" required>
+<!--           <input class="form-control" id="kategorija" name="kategorija" placeholder="Kategorija" type="text" required>  -->
+
+
+
+
+
+ <form id="L" name="form" method="post">
+   <select name="kategorija">
+       <?php
+
+            while ($cat = mysqli_fetch_array(
+                                $kategorija,MYSQLI_ASSOC)):;
+
+                ?>
+                    <option value="<?php echo $cat['kategorija_id'];
+                    ?>">
+                               <?php echo $cat['pavadinimas'];?>
+                    </option>
+                <?php
+              endwhile;
+              mysqli_close($con);
+                ?>
+  </select>
+</form>
+
         </div>
         <div class="col-sm-4 form-group">
           <input class="form-control" id="vardas" name="vardas" placeholder="Vardas" type="text" required>
@@ -74,16 +109,27 @@
       <label class="form-label" for="customFile">Pasirinkti nuotrauką:</label>
 	  <input type="file" class="form-control" name="fileToUpload" id="fileToUpload" />
         <br>
-           <a class="btn btn-large btn-primary" data-toggle="confirmation">Pridėti nuotrauką</a>
+
+<form action=””method=”post”>
+
+	Dokumentacija:
+	<input type="checkbox" name="dokumentacija" value="No" />
+
+
+</form>
+        
+        
+        
+<!--            <a class="btn btn-large btn-primary" data-toggle="confirmation">Pridėti nuotrauką</a>  -->
            
-           <input type="submit" value="Upload Image" name="submit"><br><br>
+<!--            <input type="submit" value="Upload Image" name="submit"><br><br>  -->
         </div>
       </div>
       <textarea class="form-control" id="aprasymas" name="aprasas" placeholder="Aprašymas" rows="2"></textarea>
       <br>
       <div class="row">
         <div class="col-md-12 form-group">
-          <button class="btn pull-right" type="submit">Pridėti</button>
+          <button class="btn pull-right" type="submit" name="submit">Pridėti</button>
         </div>
       </div>
     </div>
