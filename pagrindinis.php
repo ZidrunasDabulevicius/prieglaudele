@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Gyvunu prieglauda</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -51,7 +51,7 @@
         <li class="active"><a href="./pagrindinis.php">Home</a></li>
         <li><a href="./pages/apiemus.php">Apie mus</a></li>
         <li><a href="pages/priglauskgyvuna.php">Priglausk gyvūną</a></li>
-        <li><a href="#">Atiduoti augintinį</a></li>
+        <li><a href="./pages/atiduotigyvuna.php">Atiduoti augintinį</a></li>
         <li><a href="#">Finansinė parama</a></li>
         <li><a href="#">Kontaktai</a></li>
       </ul>
