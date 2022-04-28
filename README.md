@@ -7,6 +7,7 @@
 5. Registruokitės;
 6. Prisijunkite naudodami vartotojo vardą ir slaptažodį;
 7. Peržiūrėkite esamus gyvūnus skiltyje: "Priglausk gyvūną"
+8. Užpildykite formą "Atiduoti augintinį", norėdami palikti prieglaudoje.
 
 
 # prieglaudele
