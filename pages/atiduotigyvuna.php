@@ -51,6 +51,9 @@
 </nav>
 
 <!-- Container (Contact Section) -->
+
+<form action="upload.php" method="post" enctype="multipart/form-data">
+
 <div class="container">
   <h3 class="text-center">Atiduodamas gyvūnas</h3>
   <p class="text-center"><em>Užpildykite laukus: </em></p>
@@ -58,23 +61,25 @@
     <div class="col-md-12">
       <div class="row">
         <div class="col-sm-4 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Kategorija" type="text" required>
+          <input class="form-control" id="kategorija" name="kategorija" placeholder="Kategorija" type="text" required>
         </div>
         <div class="col-sm-4 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Vardas" type="text" required>
+          <input class="form-control" id="vardas" name="vardas" placeholder="Vardas" type="text" required>
         </div>	
         <div class="col-sm-4 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Amžius" type="text" required>
+          <input class="form-control" id="amzius" name="amzius" placeholder="Amžius" type="text" required>
         </div>
         <div class="row">
         <div class="col-md-12 form-group">  
       <label class="form-label" for="customFile">Pasirinkti nuotrauką:</label>
-	  <input type="file" class="form-control" id="customFile" />
+	  <input type="file" class="form-control" name="fileToUpload" id="fileToUpload" />
         <br>
            <a class="btn btn-large btn-primary" data-toggle="confirmation">Pridėti nuotrauką</a>
+           
+           <input type="submit" value="Upload Image" name="submit"><br><br>
         </div>
       </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Aprašymas" rows="2"></textarea>
+      <textarea class="form-control" id="aprasymas" name="aprasas" placeholder="Aprašymas" rows="2"></textarea>
       <br>
       <div class="row">
         <div class="col-md-12 form-group">
@@ -84,6 +89,8 @@
     </div>
   </div>
 </div>
- 
+
+</form> 
+
 </body>
 </html>
