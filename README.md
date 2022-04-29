@@ -1,4 +1,4 @@
-# User Manual
+# System installation manual
 
 1. Importuokite DB "prieglauda"
 2. Įsikelkite .php failus į eclipse IDE (php projekto katalogas C:\xampp\htdocs\gyvunuPrieglauda);
